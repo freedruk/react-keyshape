@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <Keyshape/>
-        <div><strong>The icon made by my good friend <a href="https://beta.designforventures.co/Free-Animated-SVG-Icons/">Juan Maguid</a></strong></div>
+        <div><strong>The icon is made by my good friend <a href="https://beta.designforventures.co/Free-Animated-SVG-Icons/">Juan Maguid</a></strong></div>
       </div>
     );
   }
