@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-keyshape": "^2.0.17"
+    "react-keyshape": "^2.0.19"
   },
   "devDependencies": {
     "react-scripts": "1.1.0"
