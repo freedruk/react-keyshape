@@ -2,7 +2,7 @@
 
 react-keyshape is a Higher order component för using Keyshape-animations in React projects. Please note that this is an alpha-release and is still under **heavy development**!
 
-This is based on Create React App.
+This example project is build with Create React App.
 
 ```sh
 npm install --save react-keyshape
