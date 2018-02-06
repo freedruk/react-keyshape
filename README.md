@@ -8,7 +8,7 @@ npm install --save react-keyshape
 
 
 ## react-keyshape (settings, component)
-###__settings__: (Object)
+### __settings__: (Object)
 
 #### jsId
 The property name available through the window-object (should be *ks*).
@@ -16,7 +16,7 @@ The property name available through the window-object (should be *ks*).
 #### animationScriptPath
 The path to the script-file containing the Keyshape animation.
 
-###__component__: (React-component)
+### __component__: (React-component)
 The React-component which is wrapped by the higher order component 
 
 Usage
