@@ -9,6 +9,7 @@ typeof a[f]||"string"==typeof e[f]){if(a[f]!==e[f])return.5>d?a:e;k[f]=a[f]}else
 m,n=!1);t=-1;w(y)}function E(b){g=b;!1!==n?B||p||0==m?n=g:D(g):z=g/m-((new Date).getTime()-(0>t?(new Date).getTime():t));y()}var w=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||null;w||(w=function(b){window.setTimeout(b,16)});var g=0,t=-1,z=0,B=!0,n=0,p=!1,m=1,l,u=[],L={stroke:32,fill:32,strokeDasharray:48,filter:64,width:1,height:1,d:81};return{play:function(b){"undefined"!==typeof b&&
 E(b);B=!1;p||(b=n,0<m&&(0>b||b>=l.end)?b=0:0>m&&(0>=b||b>l.end)&&(b=l.end),D(b));return G},pause:function(b){"undefined"!==typeof b&&E(b);B=!0;p&&(p=!1,n=g);return G},_set_data:function(b){l=b;u=[];for(b=0;b<l.targets.length;++b)u[b]=document.getElementById(l.targets[b]);l.anims.forEach(function(a){if(0==a[0][0]){var b=document.createElementNS("http://www.w3.org/2000/svg","path");b.setAttribute("d",a[0][7]);a[0][10]=" "==a[0][7].charAt(0);a[0][9]=b.getTotalLength();a[0][7]=b}a.forEach(function(a){a[8]=
 L[a[0]];a[8]||(a[8]=0)})})}}}();window.ks=G;
+// You need to alter the code so that the animation doesn't start until the document is fully loaded
 document.ks=window.ks;
 (function(ks){ 
   ks._data={targets:['shine-6-x','shine-4-x','shine-3-x','shine-1-x','shine-2-x','shine-5-x','spinning-records','dj-hand'],
