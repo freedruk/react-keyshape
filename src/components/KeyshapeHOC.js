@@ -1,5 +1,5 @@
 import React from 'react';
-import withKeyshape from 'react-keyshape';
+import { withKeyshape } from 'react-keyshape';
 
 const KEYSHAPE_SETTINGS = {
   "jsId" : "ks",
