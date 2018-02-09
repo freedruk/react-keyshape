@@ -1,26 +1,61 @@
 # react-keyshape
 
-react-keyshape is a Higher order component för using Keyshape-animations in React projects. Please note that this is a beta-release.
+react-keyshape enables you to have [Keyshape](https://www.keyshapeapp.com/)-animations in React projects. Please note that this is a beta-release.
 
 ```sh
 npm install --save react-keyshape
 ```
+```sh
+yarn add react-keyshape
+```
+
+A complete demo-project can be found here [react-keyshape](https://github.com/freedruk/react-keyshape). 
+
+Changelog
+---------
+__2018-02-09__
+Great news! You now have two options two choose from! Keyshape-component and withKeyshape-HOC.
 
 
-## react-keyshape (settings, component)
-###__settings__: (Object)
+Option 1 _(preferred)_:
+---------
+  ```js
+  import { Keyshape } from 'react-keyshape';
+  import yourSvgImageWithAnimations from '[PATH_TO_SVG]';
 
-#### jsId
+  <Keyshape svg={yourSvgImageWithAnimations}/>
+  ```
+
+Option 2:
+---------
+  ```js
+  import { withKeyshape } from 'react-keyshape';
+
+  const keyshapeSettings = {
+    "jsId" : "ks",
+    "animationScriptUrl" : "[PATH_TO_YOUR_JS_FILE]" // Will be [ROOT]/scripts/[PATH_TO_YOUR_JS_FILE]
+  }
+
+  const KeyshapeSVG = (props) => {
+  return([YOUR_SVG_CODE_WITHOUT_JAVASCRIPT_GOES_HERE]); 
+  }
+
+  export default withKeyshape(keyshapeSettings, KeyshapeSVG);
+  ```
+
+#### __settings__: (Object)
+
+**jsId**
 The property name available through the window-object (should be *ks*).
 
-#### animationScriptPath
+**animationScriptUrl**
 The path to the script-file containing the Keyshape animation.
 
-###__component__: (React-component)
+#### __component__: (React-component)
 The React-component which is wrapped by the higher order component 
 
-Usage
------
+withKeyshape HOC Usage
+-----------------------
 
 You need to:
 - Use [absolute imports](https://medium.com/@ktruong008/absolute-imports-with-create-react-app-4338fbca7e3d)
@@ -54,12 +89,10 @@ You need to:
   More info: 
   [https://reactjs.org/docs/dom-elements.html#all-supported-svg-attributes](https://reactjs.org/docs/dom-elements.html#all-supported-svg-attributes)
 
-Example
--------
+withKeyshape HOC Example
+------------------------
 
 The icon used in this example is made by my good friend [Juan Maguid](https://beta.designforventures.co/Free-Animated-SVG-Icons/). 
-
-A complete demo-project can be found here [react-keyshape](https://github.com/freedruk/react-keyshape). 
 
 ```js
 import React from 'react';
