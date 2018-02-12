@@ -23,17 +23,19 @@ class App extends Component {
       <div className="App">
         <KeyshapeHOC/>
         <div>
-          <Keyshape svg={vinylsvg}/>
-          <Keyshape svg={babysadhappysvg}/>
-          <Keyshape svg={diamonddarksvg}/>
-          <Keyshape svg={loaderdarksvg}/>
-          <Keyshape svg={notepaddarksvg}/>
-          <Keyshape svg={lovedarksvg}/>
-          <Keyshape svg={smartphonedarksvg}/>
-          <Keyshape svg={soundclouddarksvg}/>
-          <Keyshape svg={trippysundarksvg}/>
-          <Keyshape svg={twitterdarksvg}/>
-          <Keyshape svg={youtubedarksvg}/>
+        <Keyshape svg={vinylsvg}/>
+        <Keyshape svg={babysadhappysvg}/>
+        <Keyshape svg={diamonddarksvg}/>
+        <Keyshape svg={loaderdarksvg}/>
+        <Keyshape svg={notepaddarksvg}/>
+        <Keyshape svg={lovedarksvg}/>
+        <Keyshape svg={smartphonedarksvg}/>
+        <Keyshape svg={soundclouddarksvg}/>
+        <Keyshape svg={trippysundarksvg}/>
+        <Keyshape svg={twitterdarksvg}/>
+        <Keyshape svg={youtubedarksvg} callback={ (player) => {
+            setTimeout(()=>{ player.pause() }, 8000); // Pauses the animation after 8s.
+        }}/>
         </div>
         <div><strong>The icons are made by my good friend <a href="https://beta.designforventures.co/Free-Animated-SVG-Icons/">Juan Maguid</a></strong></div>
       </div>
