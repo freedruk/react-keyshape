@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Keyshape } from 'react-keyshape';
 import KeyshapeHOC from './components/KeyshapeHOC';
 
-import vinylsvg from './svg/vinyl-dj-dark-grey.svg';
 import babysadhappysvg from './svg/baby-happysad-icon-dark-grey.svg';
 import diamonddarksvg from './svg/diamond-dark-grey.svg';
 import loaderdarksvg from './svg/loader-dark.svg';
@@ -23,7 +22,6 @@ class App extends Component {
       <div className="App">
         <KeyshapeHOC/>
         <div>
-        <Keyshape svg={vinylsvg}/>
         <Keyshape svg={babysadhappysvg}/>
         <Keyshape svg={diamonddarksvg}/>
         <Keyshape svg={loaderdarksvg}/>
@@ -33,7 +31,7 @@ class App extends Component {
         <Keyshape svg={soundclouddarksvg}/>
         <Keyshape svg={trippysundarksvg}/>
         <Keyshape svg={twitterdarksvg}/>
-        <Keyshape svg={youtubedarksvg} callback={ (player) => {
+        <Keyshape svg={youtubedarksvg} callback={ (player, keyshapeElement) => {
             setTimeout(()=>{ player.pause() }, 8000); // Pauses the animation after 8s.
         }}/>
         </div>
