@@ -31,3 +31,10 @@
   display: inline-block;
   margin: 1%;
 }
+
+.material-card {
+  width: 48%;
+  display: inline-block;
+  margin: 1%;
+  padding: 0 0 20px 0;
+}
