@@ -80,7 +80,13 @@ class App extends Component {
                 </MaterialCard> 
                 <MaterialCard title="show-some-love-dark-grey.svg" subtitle="">   
                     <Keyshape svg={lovedarksvg}/>
-                </MaterialCard>                  
+                </MaterialCard>
+                <p className="App-intro">
+                    Thanks to my friend <a href="https://www.designforventures.co/" alt="D4V">Juan Maguid</a> for the svg-icons!
+                </p>
+                <p className="App-intro">
+                    You can find tutorials on how to use Keyshape app <a href="https://www.youtube.com/playlist?list=PLYgHlvJh8SlVCSevlEIbXP_tEP8_ZgwTu" alt="D4V">here</a> (also made by Juan :)
+                </p>
         </div>
     </MuiThemeProvider>
     );
